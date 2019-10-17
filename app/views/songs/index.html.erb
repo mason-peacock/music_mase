@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="song_table">Songs</h1>
+
+<br>
+<% if user_signed_in? %>
+  <%= link_to 'Add New Song', new_song_path, class: "btn btn-default a_button" %>
+  <br>
+  <br>
+<% end %>
+  
+<br>
+
+<table class="table song_table">
+  <thead>
+    <tr>
+      <th class="artist">Artist</th>
+      <th class="title">Title</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @songs.each do |song| %>
+      <tr>
+        <td class="song_names"><%= song.artist %></td>
+        <td class="song_names"><%= song.title %></td>
+        <% if user_signed_in? %>
+          <td><%= link_to 'Edit', edit_song_path(song), class: "btn btn-default a_button" %></td>
+          <td><%= link_to 'Delete', song, class: "btn btn-default a_button", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h1 class="freebird">NO FREEBIRD!</h1>
+<br>
+<br>
+<br>
+<br>
+

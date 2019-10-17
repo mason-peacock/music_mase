@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Leckerli+One&display=swap');
+
+body {
+	background-color: #ffff94;
+}
+
+
+
+.jumbotron {
+	background-image: url("skyline.jpg");
+	height: 440px;
+	color: #fd8953;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+}
+
+.edgy_jumbo {
+	border-bottom-left-radius: 0% !important;
+	border-bottom-right-radius: 0% !important;
+	border-top-left-radius: 0% !important;
+	border-top-right-radius: 0% !important;
+	box-shadow: 2px 0px 2px #4c4c4c;
+}
+
+.edgy_nav {
+	border-top-left-radius: 0% !important;
+	border-top-right-radius: 0% !important;
+	box-shadow: 2px 2px 2px #4c4c4c;
+}
+
+.first_name {
+	font-family: Leckerli One;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	margin-left: 3%;
+	margin-top: -6%;
+	text-shadow: 2px 2px 1px black;
+
+}
+
+.last_name {
+	font-family: Leckerli One;
+	margin-left: 8%;
+	margin-top: -70px;
+	padding-top: 0px;
+	text-shadow: 2px 2px 1px black;
+}
+
+.media {
+	font-family: Helvetica Neue;
+	font-size: 16px;
+	margin-left: -25px;
+}

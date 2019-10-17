@@ -1,0 +1,42 @@
+.youtube {
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 560;
+	height: 315;
+	
+}
+
+.soundcloud {
+  background-color: #f44336;
+  color: white !important;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 39.5%;
+  border-radius: 5px;
+}
+
+soundcloud:link, {
+  background-color: red !important;
+  color: white !important;
+}
+
+soundcloud:hover {
+  background-color: brown !important;
+  color: white !important;
+}
+
+soundcloud:active {
+	background-color: purple !important;
+	color: white !important;
+}
+
+soundcloud:visited {
+	background-color: lightblue !important;
+	color: #4c4c4c !important;
+}
+
+.words {
+	text-align: center;
+}
